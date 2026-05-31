@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-05-31T23:33:17.701483",
+  "timestamp": "2026-05-31T23:34:21.079193",
   "trading_mode": false,
   "balances": {
     "XAUt0": 0.050067,
@@ -45,8 +45,8 @@
             "inputMint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
             "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
             "inAmount": "112962275",
-            "outAmount": "112843180",
-            "updateContextSlot": "423456684"
+            "outAmount": "112843993",
+            "updateContextSlot": "423456836"
           },
           "percent": 100,
           "bps": null
@@ -57,23 +57,23 @@
             "label": "ZeroFi",
             "inputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
             "outputMint": "GoLDppdjB1vDTPSGxyMJFqdnj134yH6Prg9eqsGDiw6A",
-            "inAmount": "112843180",
+            "inAmount": "112843993",
             "outAmount": "25015",
-            "updateContextSlot": "423456671"
+            "updateContextSlot": "423456827"
           },
           "percent": 100,
           "bps": null
         }
       ],
-      "contextSlot": 423456687,
-      "timeTaken": 0.017366645,
+      "contextSlot": 423456846,
+      "timeTaken": 0.000924006,
       "swapUsdValue": "112.96882060551287844554902847",
       "mostReliableAmmsQuoteReport": {
         "info": {
-          "BZtgQEyS6eXUXicYPHecYQ7PybqodXQMvkjUbP4R8mUU": "112666890",
-          "8sjV1AqBFvFuADBCQHhotaRq5DFFYSjjg1jMyVWMqXvZ": "112675496",
-          "3Vj8miZuTSdonf4W1xLdYFatrXLm38CShrCi7NbZS5Ah": "24947",
-          "9KWAAyaYF7nmMWzirnBmVhE1q4YXPHcXjzfi6YreNtDY": "112794642"
+          "9KWAAyaYF7nmMWzirnBmVhE1q4YXPHcXjzfi6YreNtDY": "112794642",
+          "8sjV1AqBFvFuADBCQHhotaRq5DFFYSjjg1jMyVWMqXvZ": "112844124",
+          "BZtgQEyS6eXUXicYPHecYQ7PybqodXQMvkjUbP4R8mUU": "112834333",
+          "3Vj8miZuTSdonf4W1xLdYFatrXLm38CShrCi7NbZS5Ah": "24947"
         }
       },
       "longtailMarketQuoteReport": null,
@@ -106,6 +106,6 @@
     "total_swaps": 0,
     "last_swap": null
   },
-  "_synced_at": "2026-05-31T23:33:31.113318",
+  "_synced_at": "2026-05-31T23:34:31.113939",
   "_sync_source": "github_sync.py"
 }
