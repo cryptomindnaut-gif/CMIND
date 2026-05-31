@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-05-31T22:54:02.692833",
+  "timestamp": "2026-05-31T22:55:06.219243",
   "trading_mode": false,
   "balances": {
     "XAUt0": 0.050067,
@@ -23,7 +23,7 @@
       "swapMode": "ExactIn",
       "slippageBps": 50,
       "platformFee": null,
-      "priceImpactPct": "0.0007366922036953582694907617",
+      "priceImpactPct": "0.001188030644434429923388914",
       "routePlan": [
         {
           "swapInfo": {
@@ -45,8 +45,8 @@
             "inputMint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
             "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
             "inAmount": "112975266",
-            "outAmount": "112856810",
-            "updateContextSlot": "423450760"
+            "outAmount": "112856799",
+            "updateContextSlot": "423450919"
           },
           "percent": 100,
           "bps": null
@@ -57,23 +57,23 @@
             "label": "ZeroFi",
             "inputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
             "outputMint": "GoLDppdjB1vDTPSGxyMJFqdnj134yH6Prg9eqsGDiw6A",
-            "inAmount": "112856810",
+            "inAmount": "112856799",
             "outAmount": "25038",
-            "updateContextSlot": "423450754"
+            "updateContextSlot": "423450915"
           },
           "percent": 100,
           "bps": null
         }
       ],
-      "contextSlot": 423450765,
-      "timeTaken": 0.00090399,
-      "swapUsdValue": "112.91779584462511291779584462",
+      "contextSlot": 423450926,
+      "timeTaken": 0.00098895,
+      "swapUsdValue": "112.96882060551287844554902847",
       "mostReliableAmmsQuoteReport": {
         "info": {
+          "3Vj8miZuTSdonf4W1xLdYFatrXLm38CShrCi7NbZS5Ah": "24947",
+          "8sjV1AqBFvFuADBCQHhotaRq5DFFYSjjg1jMyVWMqXvZ": "112676227",
           "9KWAAyaYF7nmMWzirnBmVhE1q4YXPHcXjzfi6YreNtDY": "112794642",
-          "8sjV1AqBFvFuADBCQHhotaRq5DFFYSjjg1jMyVWMqXvZ": "112856874",
-          "BZtgQEyS6eXUXicYPHecYQ7PybqodXQMvkjUbP4R8mUU": "112847320",
-          "3Vj8miZuTSdonf4W1xLdYFatrXLm38CShrCi7NbZS5Ah": "24950"
+          "BZtgQEyS6eXUXicYPHecYQ7PybqodXQMvkjUbP4R8mUU": "112666901"
         }
       },
       "longtailMarketQuoteReport": null,
@@ -106,6 +106,6 @@
     "total_swaps": 0,
     "last_swap": null
   },
-  "_synced_at": "2026-05-31T22:54:31.085084",
+  "_synced_at": "2026-05-31T22:55:31.085330",
   "_sync_source": "github_sync.py"
 }
