@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-01T00:41:12.885938",
+  "timestamp": "2026-06-01T00:42:15.880952",
   "trading_mode": false,
   "balances": {
     "XAUt0": 0.050067,
@@ -23,7 +23,7 @@
       "swapMode": "ExactIn",
       "slippageBps": 50,
       "platformFee": null,
-      "priceImpactPct": "0.0082709459142212189616252822",
+      "priceImpactPct": "0.0087229945848375451263537906",
       "routePlan": [
         {
           "swapInfo": {
@@ -39,12 +39,12 @@
           "bps": null
         }
       ],
-      "contextSlot": 423466988,
-      "timeTaken": 0.000432135,
-      "swapUsdValue": "113.93103071124863852418300058",
+      "contextSlot": 423467149,
+      "timeTaken": 0.000412391,
+      "swapUsdValue": "113.93154992480517704962858315",
       "mostReliableAmmsQuoteReport": {
         "info": {
-          "9KWAAyaYF7nmMWzirnBmVhE1q4YXPHcXjzfi6YreNtDY": "24740",
+          "9KWAAyaYF7nmMWzirnBmVhE1q4YXPHcXjzfi6YreNtDY": "24729",
           "Hhe5ALUosQ6sryrq1ASDX4ee5uf27ZKGdAWPspQivCDw": "Not found"
         }
       },
@@ -78,6 +78,6 @@
     "total_swaps": 0,
     "last_swap": null
   },
-  "_synced_at": "2026-06-01T00:41:31.162644",
+  "_synced_at": "2026-06-01T00:42:31.163430",
   "_sync_source": "github_sync.py"
 }
