@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-05-31T22:19:00.051069",
+  "timestamp": "2026-05-31T22:20:01.976829",
   "trading_mode": false,
   "balances": {
     "XAUt0": 0.050067,
@@ -18,12 +18,12 @@
       "inputMint": "AymATz4TCL9sWNEEV9Kvyz45CHVhDZ6kUgjTJPzLpU9P",
       "inAmount": "25000",
       "outputMint": "GoLDppdjB1vDTPSGxyMJFqdnj134yH6Prg9eqsGDiw6A",
-      "outAmount": "25032",
-      "otherAmountThreshold": "24907",
+      "outAmount": "25027",
+      "otherAmountThreshold": "24902",
       "swapMode": "ExactIn",
       "slippageBps": 50,
       "platformFee": null,
-      "priceImpactPct": "0.0009761514195583596214511041",
+      "priceImpactPct": "0.0011757007661108607480847229",
       "routePlan": [
         {
           "swapInfo": {
@@ -45,8 +45,8 @@
             "inputMint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
             "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
             "inAmount": "112935094",
-            "outAmount": "112817910",
-            "updateContextSlot": "423445452"
+            "outAmount": "112817876",
+            "updateContextSlot": "423445611"
           },
           "percent": 100,
           "bps": null
@@ -57,23 +57,23 @@
             "label": "ZeroFi",
             "inputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
             "outputMint": "GoLDppdjB1vDTPSGxyMJFqdnj134yH6Prg9eqsGDiw6A",
-            "inAmount": "112817910",
-            "outAmount": "25032",
-            "updateContextSlot": "423445444"
+            "inAmount": "112817876",
+            "outAmount": "25027",
+            "updateContextSlot": "423445605"
           },
           "percent": 100,
           "bps": null
         }
       ],
-      "contextSlot": 423445456,
-      "timeTaken": 0.000979342,
+      "contextSlot": 423445613,
+      "timeTaken": 0.000872201,
       "swapUsdValue": "112.91779584462511291779584462",
       "mostReliableAmmsQuoteReport": {
         "info": {
+          "8sjV1AqBFvFuADBCQHhotaRq5DFFYSjjg1jMyVWMqXvZ": "112677477",
+          "BZtgQEyS6eXUXicYPHecYQ7PybqodXQMvkjUbP4R8mUU": "112666898",
           "9KWAAyaYF7nmMWzirnBmVhE1q4YXPHcXjzfi6YreNtDY": "112794642",
-          "8sjV1AqBFvFuADBCQHhotaRq5DFFYSjjg1jMyVWMqXvZ": "112677837",
-          "BZtgQEyS6eXUXicYPHecYQ7PybqodXQMvkjUbP4R8mUU": "112666923",
-          "3Vj8miZuTSdonf4W1xLdYFatrXLm38CShrCi7NbZS5Ah": "24938"
+          "3Vj8miZuTSdonf4W1xLdYFatrXLm38CShrCi7NbZS5Ah": "24941"
         }
       },
       "longtailMarketQuoteReport": null,
@@ -83,10 +83,10 @@
       "loadedLongtailToken": false,
       "instructionVersion": null
     },
-    "price": 1.00128,
-    "profit_pct": 0.12799999999999478,
+    "price": 1.00108,
+    "profit_pct": 0.10799999999999699,
     "in_ui": 0.025,
-    "out_ui": 0.025032,
+    "out_ui": 0.025027,
     "in_raw": 25000,
     "is_actionable": false,
     "from_mint": "AymATz4TCL9sWNEEV9Kvyz45CHVhDZ6kUgjTJPzLpU9P",
@@ -106,6 +106,6 @@
     "total_swaps": 0,
     "last_swap": null
   },
-  "_synced_at": "2026-05-31T22:19:31.059710",
+  "_synced_at": "2026-05-31T22:20:31.060239",
   "_sync_source": "github_sync.py"
 }
