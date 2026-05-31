@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-05-31T23:47:24.547402",
+  "timestamp": "2026-05-31T23:48:27.523614",
   "trading_mode": false,
   "balances": {
     "XAUt0": 0.050067,
@@ -23,7 +23,7 @@
       "swapMode": "ExactIn",
       "slippageBps": 50,
       "platformFee": null,
-      "priceImpactPct": "0.0012156106354213609734114467",
+      "priceImpactPct": "0.00031397655545536519386835",
       "routePlan": [
         {
           "swapInfo": {
@@ -33,7 +33,7 @@
             "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
             "inAmount": "25000",
             "outAmount": "112823013",
-            "updateContextSlot": "423458822"
+            "updateContextSlot": "423458965"
           },
           "percent": 100,
           "bps": null
@@ -46,20 +46,20 @@
             "outputMint": "GoLDppdjB1vDTPSGxyMJFqdnj134yH6Prg9eqsGDiw6A",
             "inAmount": "112823013",
             "outAmount": "25026",
-            "updateContextSlot": "423458829"
+            "updateContextSlot": "423458968"
           },
           "percent": 100,
           "bps": null
         }
       ],
-      "contextSlot": 423458830,
-      "timeTaken": 0.000943052,
-      "swapUsdValue": "112.91779584462511291779584462",
+      "contextSlot": 423458988,
+      "timeTaken": 0.000923477,
+      "swapUsdValue": "112.86681715575620767494356659",
       "mostReliableAmmsQuoteReport": {
         "info": {
-          "9KWAAyaYF7nmMWzirnBmVhE1q4YXPHcXjzfi6YreNtDY": "112794642",
-          "BZtgQEyS6eXUXicYPHecYQ7PybqodXQMvkjUbP4R8mUU": "112666874",
-          "3Vj8miZuTSdonf4W1xLdYFatrXLm38CShrCi7NbZS5Ah": "24942"
+          "BZtgQEyS6eXUXicYPHecYQ7PybqodXQMvkjUbP4R8mUU": "112806611",
+          "3Vj8miZuTSdonf4W1xLdYFatrXLm38CShrCi7NbZS5Ah": "24942",
+          "9KWAAyaYF7nmMWzirnBmVhE1q4YXPHcXjzfi6YreNtDY": "112794642"
         }
       },
       "longtailMarketQuoteReport": null,
@@ -92,6 +92,6 @@
     "total_swaps": 0,
     "last_swap": null
   },
-  "_synced_at": "2026-05-31T23:47:31.123824",
+  "_synced_at": "2026-05-31T23:48:31.143930",
   "_sync_source": "github_sync.py"
 }
