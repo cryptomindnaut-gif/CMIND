@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-05-31T22:18:28.404805",
+  "timestamp": "2026-05-31T22:19:00.051069",
   "trading_mode": false,
   "balances": {
     "XAUt0": 0.050067,
@@ -46,7 +46,7 @@
             "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
             "inAmount": "112935094",
             "outAmount": "112817910",
-            "updateContextSlot": "423445371"
+            "updateContextSlot": "423445452"
           },
           "percent": 100,
           "bps": null
@@ -59,21 +59,21 @@
             "outputMint": "GoLDppdjB1vDTPSGxyMJFqdnj134yH6Prg9eqsGDiw6A",
             "inAmount": "112817910",
             "outAmount": "25032",
-            "updateContextSlot": "423445375"
+            "updateContextSlot": "423445444"
           },
           "percent": 100,
           "bps": null
         }
       ],
-      "contextSlot": 423445376,
-      "timeTaken": 0.001131575,
+      "contextSlot": 423445456,
+      "timeTaken": 0.000979342,
       "swapUsdValue": "112.91779584462511291779584462",
       "mostReliableAmmsQuoteReport": {
         "info": {
           "9KWAAyaYF7nmMWzirnBmVhE1q4YXPHcXjzfi6YreNtDY": "112794642",
+          "8sjV1AqBFvFuADBCQHhotaRq5DFFYSjjg1jMyVWMqXvZ": "112677837",
           "BZtgQEyS6eXUXicYPHecYQ7PybqodXQMvkjUbP4R8mUU": "112666923",
-          "3Vj8miZuTSdonf4W1xLdYFatrXLm38CShrCi7NbZS5Ah": "24938",
-          "8sjV1AqBFvFuADBCQHhotaRq5DFFYSjjg1jMyVWMqXvZ": "112677837"
+          "3Vj8miZuTSdonf4W1xLdYFatrXLm38CShrCi7NbZS5Ah": "24938"
         }
       },
       "longtailMarketQuoteReport": null,
@@ -106,6 +106,6 @@
     "total_swaps": 0,
     "last_swap": null
   },
-  "_synced_at": "2026-05-31T22:18:31.077191",
+  "_synced_at": "2026-05-31T22:19:31.059710",
   "_sync_source": "github_sync.py"
 }
