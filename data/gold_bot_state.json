@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-01T02:45:07.593136",
+  "timestamp": "2026-06-01T02:46:10.725503",
   "trading_mode": false,
   "balances": {
     "XAUt0": 0.050067,
@@ -9,71 +9,43 @@
   },
   "total_gold_balance": 0.05522751,
   "best_opportunity": {
-    "pair_id": "XAUt0_GOLD_sell",
-    "from": "XAUt0",
-    "to": "GOLD",
-    "direction": "sell",
-    "label": "XAUt0 ↔ GOLD",
+    "pair_id": "XAUt0_PAXG_buy",
+    "from": "PAXG",
+    "to": "XAUt0",
+    "direction": "buy",
+    "label": "XAUt0 ↔ PAXG",
     "quote": {
-      "inputMint": "AymATz4TCL9sWNEEV9Kvyz45CHVhDZ6kUgjTJPzLpU9P",
-      "inAmount": "25000",
-      "outputMint": "GoLDppdjB1vDTPSGxyMJFqdnj134yH6Prg9eqsGDiw6A",
-      "outAmount": "25023",
-      "otherAmountThreshold": "24898",
+      "inputMint": "C6oFsE8nXRDThzrMEQ5SxaNFGKoyyfWDDVPw37JKvPTe",
+      "inAmount": "2500000",
+      "outputMint": "AymATz4TCL9sWNEEV9Kvyz45CHVhDZ6kUgjTJPzLpU9P",
+      "outAmount": "25018",
+      "otherAmountThreshold": "24893",
       "swapMode": "ExactIn",
       "slippageBps": 50,
       "platformFee": null,
-      "priceImpactPct": "0.0008858998646820027063599459",
+      "priceImpactPct": "0.0072658631721644826028016267",
       "routePlan": [
         {
           "swapInfo": {
-            "ammKey": "EUAa7W7omZMN6mzLFidmULMYwJBFxfUzE3kD8ywX9Qq9",
-            "label": "Byreal",
-            "inputMint": "AymATz4TCL9sWNEEV9Kvyz45CHVhDZ6kUgjTJPzLpU9P",
-            "outputMint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
-            "inAmount": "25000",
-            "outAmount": "113007747",
-            "updateContextSlot": "423485510"
-          },
-          "percent": 100,
-          "bps": null
-        },
-        {
-          "swapInfo": {
-            "ammKey": "58KYpdKJxKNHLzRVBfZQRA3srgWKpsiXopttNewzNVvJ",
-            "label": "ZeroFi",
-            "inputMint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
-            "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
-            "inAmount": "113007747",
-            "outAmount": "112886817",
-            "updateContextSlot": "423485739"
-          },
-          "percent": 100,
-          "bps": null
-        },
-        {
-          "swapInfo": {
-            "ammKey": "CmQFZMT6MtFMSPaw82uGYGp7jJpX6YJZMAjKW3mRpMmk",
-            "label": "ZeroFi",
-            "inputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
-            "outputMint": "GoLDppdjB1vDTPSGxyMJFqdnj134yH6Prg9eqsGDiw6A",
-            "inAmount": "112886817",
-            "outAmount": "25023",
-            "updateContextSlot": "423485739"
+            "ammKey": "BRAfc8XtLaBWgSKWPm8vpqatyvHsEWEuzEm7CZsYcQxW",
+            "label": "Whirlpool",
+            "inputMint": "C6oFsE8nXRDThzrMEQ5SxaNFGKoyyfWDDVPw37JKvPTe",
+            "outputMint": "AymATz4TCL9sWNEEV9Kvyz45CHVhDZ6kUgjTJPzLpU9P",
+            "inAmount": "2500000",
+            "outAmount": "25018",
+            "updateContextSlot": "423479436"
           },
           "percent": 100,
           "bps": null
         }
       ],
-      "contextSlot": 423485745,
-      "timeTaken": 0.000962843,
-      "swapUsdValue": "112.96882060551287844554902847",
+      "contextSlot": 423485886,
+      "timeTaken": 0.000411946,
+      "swapUsdValue": "113.87757704956863173813623402",
       "mostReliableAmmsQuoteReport": {
         "info": {
-          "BZtgQEyS6eXUXicYPHecYQ7PybqodXQMvkjUbP4R8mUU": "112879628",
-          "8sjV1AqBFvFuADBCQHhotaRq5DFFYSjjg1jMyVWMqXvZ": "112886652",
-          "9KWAAyaYF7nmMWzirnBmVhE1q4YXPHcXjzfi6YreNtDY": "112717772",
-          "3Vj8miZuTSdonf4W1xLdYFatrXLm38CShrCi7NbZS5Ah": "24956"
+          "Hhe5ALUosQ6sryrq1ASDX4ee5uf27ZKGdAWPspQivCDw": "Not found",
+          "9KWAAyaYF7nmMWzirnBmVhE1q4YXPHcXjzfi6YreNtDY": "24780"
         }
       },
       "longtailMarketQuoteReport": null,
@@ -83,15 +55,15 @@
       "loadedLongtailToken": false,
       "instructionVersion": null
     },
-    "price": 1.00092,
-    "profit_pct": 0.09200000000000319,
+    "price": 1.0007199999999998,
+    "profit_pct": 0.07199999999998319,
     "in_ui": 0.025,
-    "out_ui": 0.025023,
-    "in_raw": 25000,
+    "out_ui": 0.025018,
+    "in_raw": 2500000,
     "is_actionable": false,
-    "from_mint": "AymATz4TCL9sWNEEV9Kvyz45CHVhDZ6kUgjTJPzLpU9P",
-    "to_mint": "GoLDppdjB1vDTPSGxyMJFqdnj134yH6Prg9eqsGDiw6A",
-    "from_dec": 6,
+    "from_mint": "C6oFsE8nXRDThzrMEQ5SxaNFGKoyyfWDDVPw37JKvPTe",
+    "to_mint": "AymATz4TCL9sWNEEV9Kvyz45CHVhDZ6kUgjTJPzLpU9P",
+    "from_dec": 8,
     "to_dec": 6
   },
   "best_actionable": null,
@@ -106,6 +78,6 @@
     "total_swaps": 0,
     "last_swap": null
   },
-  "_synced_at": "2026-06-01T02:45:31.255950",
+  "_synced_at": "2026-06-01T02:46:31.256654",
   "_sync_source": "github_sync.py"
 }
