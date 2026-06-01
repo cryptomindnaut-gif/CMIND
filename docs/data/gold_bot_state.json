@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-01T18:24:28.688458",
+  "timestamp": "2026-06-01T18:25:30.983544",
   "trading_mode": false,
   "balances": {
     "XAUt0": 0.050067,
@@ -18,12 +18,12 @@
       "inputMint": "GoLDppdjB1vDTPSGxyMJFqdnj134yH6Prg9eqsGDiw6A",
       "inAmount": "25000",
       "outputMint": "AymATz4TCL9sWNEEV9Kvyz45CHVhDZ6kUgjTJPzLpU9P",
-      "outAmount": "25024",
-      "otherAmountThreshold": "24899",
+      "outAmount": "25029",
+      "otherAmountThreshold": "24904",
       "swapMode": "ExactIn",
       "slippageBps": 50,
       "platformFee": null,
-      "priceImpactPct": "0.0012683170080142475512021371",
+      "priceImpactPct": "0.0015145146927871772039180766",
       "routePlan": [
         {
           "swapInfo": {
@@ -32,8 +32,8 @@
             "inputMint": "GoLDppdjB1vDTPSGxyMJFqdnj134yH6Prg9eqsGDiw6A",
             "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
             "inAmount": "25000",
-            "outAmount": "111394998",
-            "updateContextSlot": "423627579"
+            "outAmount": "111420373",
+            "updateContextSlot": "423627739"
           },
           "percent": 100,
           "bps": null
@@ -44,22 +44,22 @@
             "label": "Meteora DLMM",
             "inputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
             "outputMint": "AymATz4TCL9sWNEEV9Kvyz45CHVhDZ6kUgjTJPzLpU9P",
-            "inAmount": "111394998",
-            "outAmount": "25024",
-            "updateContextSlot": "423627579"
+            "inAmount": "111420373",
+            "outAmount": "25029",
+            "updateContextSlot": "423627739"
           },
           "percent": 100,
           "bps": null
         }
       ],
-      "contextSlot": 423627584,
-      "timeTaken": 0.000841142,
-      "swapUsdValue": "111.55734047300312360553324409",
+      "contextSlot": 423627742,
+      "timeTaken": 0.000860662,
+      "swapUsdValue": "111.60714285714285714285714286",
       "mostReliableAmmsQuoteReport": {
         "info": {
-          "3Vj8miZuTSdonf4W1xLdYFatrXLm38CShrCi7NbZS5Ah": "111118726",
-          "BZtgQEyS6eXUXicYPHecYQ7PybqodXQMvkjUbP4R8mUU": "111528583",
-          "9KWAAyaYF7nmMWzirnBmVhE1q4YXPHcXjzfi6YreNtDY": "24964"
+          "9KWAAyaYF7nmMWzirnBmVhE1q4YXPHcXjzfi6YreNtDY": "24854",
+          "BZtgQEyS6eXUXicYPHecYQ7PybqodXQMvkjUbP4R8mUU": "111553668",
+          "3Vj8miZuTSdonf4W1xLdYFatrXLm38CShrCi7NbZS5Ah": "111118726"
         }
       },
       "longtailMarketQuoteReport": null,
@@ -69,10 +69,10 @@
       "loadedLongtailToken": false,
       "instructionVersion": null
     },
-    "price": 1.00096,
-    "profit_pct": 0.09600000000000719,
+    "price": 1.0011599999999998,
+    "profit_pct": 0.11599999999998278,
     "in_ui": 0.025,
-    "out_ui": 0.025024,
+    "out_ui": 0.025029,
     "in_raw": 25000,
     "is_actionable": false,
     "from_mint": "GoLDppdjB1vDTPSGxyMJFqdnj134yH6Prg9eqsGDiw6A",
@@ -92,6 +92,6 @@
     "total_swaps": 0,
     "last_swap": null
   },
-  "_synced_at": "2026-06-01T18:24:45.581023",
+  "_synced_at": "2026-06-01T18:25:45.581687",
   "_sync_source": "github_sync.py"
 }
