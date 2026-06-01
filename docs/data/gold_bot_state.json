@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-01T13:09:39.435072",
+  "timestamp": "2026-06-01T13:10:41.020637",
   "trading_mode": false,
   "balances": {
     "XAUt0": 0.050067,
@@ -23,7 +23,7 @@
       "swapMode": "ExactIn",
       "slippageBps": 50,
       "platformFee": null,
-      "priceImpactPct": "0.0075623389312977099236641221",
+      "priceImpactPct": "0.0076027633587786259541984733",
       "routePlan": [
         {
           "swapInfo": {
@@ -33,19 +33,19 @@
             "outputMint": "AymATz4TCL9sWNEEV9Kvyz45CHVhDZ6kUgjTJPzLpU9P",
             "inAmount": "2500000",
             "outAmount": "25007",
-            "updateContextSlot": "423575141"
+            "updateContextSlot": "423574372"
           },
           "percent": 100,
           "bps": null
         }
       ],
-      "contextSlot": 423580127,
-      "timeTaken": 0.000109685,
-      "swapUsdValue": "113.14572263910135141251120143",
+      "contextSlot": 423580286,
+      "timeTaken": 0.000109141,
+      "swapUsdValue": "113.15033153047138428115594379",
       "mostReliableAmmsQuoteReport": {
         "info": {
-          "9KWAAyaYF7nmMWzirnBmVhE1q4YXPHcXjzfi6YreNtDY": "Not used RG: FullLiquidIntermediate, contains ALT: true",
-          "Hhe5ALUosQ6sryrq1ASDX4ee5uf27ZKGdAWPspQivCDw": "Not found"
+          "Hhe5ALUosQ6sryrq1ASDX4ee5uf27ZKGdAWPspQivCDw": "Not found",
+          "9KWAAyaYF7nmMWzirnBmVhE1q4YXPHcXjzfi6YreNtDY": "Not used RG: FullLiquidIntermediate, contains ALT: true"
         }
       },
       "longtailMarketQuoteReport": null,
@@ -78,6 +78,6 @@
     "total_swaps": 0,
     "last_swap": null
   },
-  "_synced_at": "2026-06-01T13:09:45.317485",
+  "_synced_at": "2026-06-01T13:10:45.318435",
   "_sync_source": "github_sync.py"
 }
