@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-01T02:03:11.854631",
+  "timestamp": "2026-06-01T02:04:14.708741",
   "trading_mode": false,
   "balances": {
     "XAUt0": 0.050067,
@@ -18,12 +18,12 @@
       "inputMint": "C6oFsE8nXRDThzrMEQ5SxaNFGKoyyfWDDVPw37JKvPTe",
       "inAmount": "2500000",
       "outputMint": "AymATz4TCL9sWNEEV9Kvyz45CHVhDZ6kUgjTJPzLpU9P",
-      "outAmount": "25027",
-      "otherAmountThreshold": "24902",
+      "outAmount": "25018",
+      "otherAmountThreshold": "24893",
       "swapMode": "ExactIn",
       "slippageBps": 50,
       "platformFee": null,
-      "priceImpactPct": "0.0065548189873417721518987342",
+      "priceImpactPct": "0.0069392177215189873417721518",
       "routePlan": [
         {
           "swapInfo": {
@@ -32,19 +32,19 @@
             "inputMint": "C6oFsE8nXRDThzrMEQ5SxaNFGKoyyfWDDVPw37JKvPTe",
             "outputMint": "AymATz4TCL9sWNEEV9Kvyz45CHVhDZ6kUgjTJPzLpU9P",
             "inAmount": "2500000",
-            "outAmount": "25027",
-            "updateContextSlot": "423464803"
+            "outAmount": "25018",
+            "updateContextSlot": "423479436"
           },
           "percent": 100,
           "bps": null
         }
       ],
-      "contextSlot": 423479375,
-      "timeTaken": 0.090403858,
-      "swapUsdValue": "113.8884712978274635215226433",
+      "contextSlot": 423479535,
+      "timeTaken": 0.040362993,
+      "swapUsdValue": "113.8915843230512011006482709",
       "mostReliableAmmsQuoteReport": {
         "info": {
-          "9KWAAyaYF7nmMWzirnBmVhE1q4YXPHcXjzfi6YreNtDY": "24700",
+          "9KWAAyaYF7nmMWzirnBmVhE1q4YXPHcXjzfi6YreNtDY": "24718",
           "Hhe5ALUosQ6sryrq1ASDX4ee5uf27ZKGdAWPspQivCDw": "Not found"
         }
       },
@@ -55,10 +55,10 @@
       "loadedLongtailToken": false,
       "instructionVersion": null
     },
-    "price": 1.00108,
-    "profit_pct": 0.10799999999999699,
+    "price": 1.0007199999999998,
+    "profit_pct": 0.07199999999998319,
     "in_ui": 0.025,
-    "out_ui": 0.025027,
+    "out_ui": 0.025018,
     "in_raw": 2500000,
     "is_actionable": false,
     "from_mint": "C6oFsE8nXRDThzrMEQ5SxaNFGKoyyfWDDVPw37JKvPTe",
@@ -78,6 +78,6 @@
     "total_swaps": 0,
     "last_swap": null
   },
-  "_synced_at": "2026-06-01T02:03:31.224289",
+  "_synced_at": "2026-06-01T02:04:31.225087",
   "_sync_source": "github_sync.py"
 }
