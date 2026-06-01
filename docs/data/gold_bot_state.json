@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-01T10:04:29.515692",
+  "timestamp": "2026-06-01T10:05:32.086022",
   "trading_mode": false,
   "balances": {
     "XAUt0": 0.050067,
@@ -39,8 +39,8 @@
           "bps": null
         }
       ],
-      "contextSlot": 423552147,
-      "timeTaken": 0.000112731,
+      "contextSlot": 423552308,
+      "timeTaken": 0.000129326,
       "swapUsdValue": "113.24053648836566728118531134",
       "mostReliableAmmsQuoteReport": {
         "info": {
@@ -78,6 +78,6 @@
     "total_swaps": 0,
     "last_swap": null
   },
-  "_synced_at": "2026-06-01T10:04:45.170870",
+  "_synced_at": "2026-06-01T10:05:45.171713",
   "_sync_source": "github_sync.py"
 }
