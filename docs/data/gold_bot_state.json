@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-01T19:21:44.229109",
+  "timestamp": "2026-06-01T19:22:37.507140",
   "trading_mode": false,
   "balances": {
     "XAUt0": 0.050067,
@@ -32,8 +32,8 @@
             "inputMint": "GoLDppdjB1vDTPSGxyMJFqdnj134yH6Prg9eqsGDiw6A",
             "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
             "inAmount": "25000",
-            "outAmount": "111659363",
-            "updateContextSlot": "423636251"
+            "outAmount": "111658238",
+            "updateContextSlot": "423636372"
           },
           "percent": 100,
           "bps": null
@@ -44,22 +44,22 @@
             "label": "Meteora DLMM",
             "inputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
             "outputMint": "AymATz4TCL9sWNEEV9Kvyz45CHVhDZ6kUgjTJPzLpU9P",
-            "inAmount": "111659363",
+            "inAmount": "111658238",
             "outAmount": "25033",
-            "updateContextSlot": "423636251"
+            "updateContextSlot": "423636372"
           },
           "percent": 100,
           "bps": null
         }
       ],
-      "contextSlot": 423636252,
-      "timeTaken": 0.000842655,
+      "contextSlot": 423636379,
+      "timeTaken": 0.000838517,
       "swapUsdValue": "111.80679785330948121645796064",
       "mostReliableAmmsQuoteReport": {
         "info": {
-          "9KWAAyaYF7nmMWzirnBmVhE1q4YXPHcXjzfi6YreNtDY": "25016",
           "3Vj8miZuTSdonf4W1xLdYFatrXLm38CShrCi7NbZS5Ah": "111134394",
-          "BZtgQEyS6eXUXicYPHecYQ7PybqodXQMvkjUbP4R8mUU": "111757738"
+          "9KWAAyaYF7nmMWzirnBmVhE1q4YXPHcXjzfi6YreNtDY": "25016",
+          "BZtgQEyS6eXUXicYPHecYQ7PybqodXQMvkjUbP4R8mUU": "111756612"
         }
       },
       "longtailMarketQuoteReport": null,
@@ -92,6 +92,6 @@
     "total_swaps": 0,
     "last_swap": null
   },
-  "_synced_at": "2026-06-01T19:21:45.640768",
+  "_synced_at": "2026-06-01T19:22:45.627921",
   "_sync_source": "github_sync.py"
 }
