@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-01T16:05:41.329663",
+  "timestamp": "2026-06-01T16:06:35.542015",
   "trading_mode": false,
   "balances": {
     "XAUt0": 0.050067,
@@ -23,7 +23,7 @@
       "swapMode": "ExactIn",
       "slippageBps": 50,
       "platformFee": null,
-      "priceImpactPct": "0.0018708211273857079449622726",
+      "priceImpactPct": "0.0009820150909897913892587661",
       "routePlan": [
         {
           "swapInfo": {
@@ -33,7 +33,7 @@
             "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
             "inAmount": "25000",
             "outAmount": "111118726",
-            "updateContextSlot": "423606651"
+            "updateContextSlot": "423606770"
           },
           "percent": 100,
           "bps": null
@@ -45,8 +45,8 @@
             "inputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
             "outputMint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
             "inAmount": "111118726",
-            "outAmount": "111236162",
-            "updateContextSlot": "423606652"
+            "outAmount": "111236688",
+            "updateContextSlot": "423606782"
           },
           "percent": 100,
           "bps": null
@@ -57,7 +57,7 @@
             "label": "Byreal",
             "inputMint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
             "outputMint": "AymATz4TCL9sWNEEV9Kvyz45CHVhDZ6kUgjTJPzLpU9P",
-            "inAmount": "111236162",
+            "inAmount": "111236688",
             "outAmount": "25031",
             "updateContextSlot": "423606627"
           },
@@ -65,15 +65,15 @@
           "bps": null
         }
       ],
-      "contextSlot": 423606658,
-      "timeTaken": 0.001567807,
-      "swapUsdValue": "111.30899376669634906500445236",
+      "contextSlot": 423606784,
+      "timeTaken": 0.001592384,
+      "swapUsdValue": "111.20996441281138790035587188",
       "mostReliableAmmsQuoteReport": {
         "info": {
+          "9KWAAyaYF7nmMWzirnBmVhE1q4YXPHcXjzfi6YreNtDY": "24937",
+          "BZtgQEyS6eXUXicYPHecYQ7PybqodXQMvkjUbP4R8mUU": "111215718",
           "3Vj8miZuTSdonf4W1xLdYFatrXLm38CShrCi7NbZS5Ah": "111118726",
-          "8sjV1AqBFvFuADBCQHhotaRq5DFFYSjjg1jMyVWMqXvZ": "111236514",
-          "BZtgQEyS6eXUXicYPHecYQ7PybqodXQMvkjUbP4R8mUU": "111214624",
-          "9KWAAyaYF7nmMWzirnBmVhE1q4YXPHcXjzfi6YreNtDY": "24947"
+          "8sjV1AqBFvFuADBCQHhotaRq5DFFYSjjg1jMyVWMqXvZ": "111236740"
         }
       },
       "longtailMarketQuoteReport": null,
@@ -106,6 +106,6 @@
     "total_swaps": 0,
     "last_swap": null
   },
-  "_synced_at": "2026-06-01T16:05:45.460730",
+  "_synced_at": "2026-06-01T16:06:45.461486",
   "_sync_source": "github_sync.py"
 }
