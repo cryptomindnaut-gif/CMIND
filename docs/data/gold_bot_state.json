@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-01T11:03:18.686638",
+  "timestamp": "2026-06-01T11:04:43.992332",
   "trading_mode": false,
   "balances": {
     "XAUt0": 0.050067,
@@ -23,7 +23,7 @@
       "swapMode": "ExactIn",
       "slippageBps": 50,
       "platformFee": null,
-      "priceImpactPct": "0.0103729147467503361721201255",
+      "priceImpactPct": "0.0103460134468848050201703272",
       "routePlan": [
         {
           "swapInfo": {
@@ -39,13 +39,13 @@
           "bps": null
         }
       ],
-      "contextSlot": 423561071,
-      "timeTaken": 0.000107615,
-      "swapUsdValue": "113.2636233486163715771733024",
+      "contextSlot": 423561286,
+      "timeTaken": 0.000112329,
+      "swapUsdValue": "113.26054455669822860508313324",
       "mostReliableAmmsQuoteReport": {
         "info": {
-          "Hhe5ALUosQ6sryrq1ASDX4ee5uf27ZKGdAWPspQivCDw": "Not found",
-          "9KWAAyaYF7nmMWzirnBmVhE1q4YXPHcXjzfi6YreNtDY": "Not used RG: FullLiquidIntermediate, contains ALT: true"
+          "9KWAAyaYF7nmMWzirnBmVhE1q4YXPHcXjzfi6YreNtDY": "Not used RG: FullLiquidIntermediate, contains ALT: true",
+          "Hhe5ALUosQ6sryrq1ASDX4ee5uf27ZKGdAWPspQivCDw": "Not found"
         }
       },
       "longtailMarketQuoteReport": null,
@@ -78,6 +78,6 @@
     "total_swaps": 0,
     "last_swap": null
   },
-  "_synced_at": "2026-06-01T11:03:45.218257",
+  "_synced_at": "2026-06-01T11:04:45.232895",
   "_sync_source": "github_sync.py"
 }
