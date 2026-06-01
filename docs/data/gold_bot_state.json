@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-01T12:36:41.624092",
+  "timestamp": "2026-06-01T12:37:44.475989",
   "trading_mode": false,
   "balances": {
     "XAUt0": 0.050067,
@@ -23,7 +23,7 @@
       "swapMode": "ExactIn",
       "slippageBps": 50,
       "platformFee": null,
-      "priceImpactPct": "0.0009869838420107719928186715",
+      "priceImpactPct": "0.0018839659039928218932256618",
       "routePlan": [
         {
           "swapInfo": {
@@ -32,8 +32,8 @@
             "inputMint": "GoLDppdjB1vDTPSGxyMJFqdnj134yH6Prg9eqsGDiw6A",
             "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
             "inAmount": "25000",
-            "outAmount": "112223933",
-            "updateContextSlot": "423575167"
+            "outAmount": "112225924",
+            "updateContextSlot": "423575311"
           },
           "percent": 100,
           "bps": null
@@ -44,22 +44,22 @@
             "label": "Meteora DLMM",
             "inputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
             "outputMint": "AymATz4TCL9sWNEEV9Kvyz45CHVhDZ6kUgjTJPzLpU9P",
-            "inAmount": "112223933",
+            "inAmount": "112225924",
             "outAmount": "25009",
-            "updateContextSlot": "423575167"
+            "updateContextSlot": "423575307"
           },
           "percent": 100,
           "bps": null
         }
       ],
-      "contextSlot": 423575170,
-      "timeTaken": 0.000960283,
-      "swapUsdValue": "112.35955056179775280898876404",
+      "contextSlot": 423575330,
+      "timeTaken": 0.000894105,
+      "swapUsdValue": "112.4100719424460431654676259",
       "mostReliableAmmsQuoteReport": {
         "info": {
           "3Vj8miZuTSdonf4W1xLdYFatrXLm38CShrCi7NbZS5Ah": "111954201",
-          "BZtgQEyS6eXUXicYPHecYQ7PybqodXQMvkjUbP4R8mUU": "112298242",
-          "9KWAAyaYF7nmMWzirnBmVhE1q4YXPHcXjzfi6YreNtDY": "24973"
+          "BZtgQEyS6eXUXicYPHecYQ7PybqodXQMvkjUbP4R8mUU": "112300235",
+          "9KWAAyaYF7nmMWzirnBmVhE1q4YXPHcXjzfi6YreNtDY": "24974"
         }
       },
       "longtailMarketQuoteReport": null,
@@ -92,6 +92,6 @@
     "total_swaps": 0,
     "last_swap": null
   },
-  "_synced_at": "2026-06-01T12:36:45.289280",
+  "_synced_at": "2026-06-01T12:37:45.290262",
   "_sync_source": "github_sync.py"
 }
