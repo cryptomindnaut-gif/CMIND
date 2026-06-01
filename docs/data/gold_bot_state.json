@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-01T17:13:32.107693",
+  "timestamp": "2026-06-01T17:14:34.773552",
   "trading_mode": false,
   "balances": {
     "XAUt0": 0.050067,
@@ -23,7 +23,7 @@
       "swapMode": "ExactIn",
       "slippageBps": 50,
       "platformFee": null,
-      "priceImpactPct": "0.001796602934637616718541574",
+      "priceImpactPct": "0.0013525622775800711743772242",
       "routePlan": [
         {
           "swapInfo": {
@@ -32,8 +32,8 @@
             "inputMint": "GoLDppdjB1vDTPSGxyMJFqdnj134yH6Prg9eqsGDiw6A",
             "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
             "inAmount": "25000",
-            "outAmount": "111347734",
-            "updateContextSlot": "423616893"
+            "outAmount": "111349874",
+            "updateContextSlot": "423617046"
           },
           "percent": 100,
           "bps": null
@@ -44,21 +44,21 @@
             "label": "Meteora DLMM",
             "inputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
             "outputMint": "AymATz4TCL9sWNEEV9Kvyz45CHVhDZ6kUgjTJPzLpU9P",
-            "inAmount": "111347734",
+            "inAmount": "111349874",
             "outAmount": "25033",
-            "updateContextSlot": "423616893"
+            "updateContextSlot": "423617046"
           },
           "percent": 100,
           "bps": null
         }
       ],
-      "contextSlot": 423616896,
-      "timeTaken": 0.000827512,
+      "contextSlot": 423617051,
+      "timeTaken": 0.000802226,
       "swapUsdValue": "111.50758251561106155218554862",
       "mostReliableAmmsQuoteReport": {
         "info": {
-          "BZtgQEyS6eXUXicYPHecYQ7PybqodXQMvkjUbP4R8mUU": "111475204",
-          "9KWAAyaYF7nmMWzirnBmVhE1q4YXPHcXjzfi6YreNtDY": "25005",
+          "BZtgQEyS6eXUXicYPHecYQ7PybqodXQMvkjUbP4R8mUU": "111477347",
+          "9KWAAyaYF7nmMWzirnBmVhE1q4YXPHcXjzfi6YreNtDY": "24890",
           "3Vj8miZuTSdonf4W1xLdYFatrXLm38CShrCi7NbZS5Ah": "111118726"
         }
       },
@@ -92,6 +92,6 @@
     "total_swaps": 0,
     "last_swap": null
   },
-  "_synced_at": "2026-06-01T17:13:45.516435",
+  "_synced_at": "2026-06-01T17:14:45.516886",
   "_sync_source": "github_sync.py"
 }
