@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🥇 Gold Arbitrage Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        /* === ESTILOS MÍNIMOS PARA DEMO === */
+        body { font-family: system-ui, sans-serif; background: #0f0f23; color: #eee; padding: 20px; margin: 0; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .header { background: linear-gradient(135deg, #f7b733, #fc4a1a); padding: 20px; border-radius: 12px; margin-bottom: 20px; }
+        .card { background: #1a1a3e; border-radius: 12px; padding: 20px; margin-bottom: 20px; border: 1px solid #333; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .metric { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #333; }
+        .profit-positive { color: #00ff88; } .profit-negative { color: #ff4444; }
+        .badge { display: inline-block; padding: 3px 8px; border-radius: 20px; font-size: 0.8em; margin-left: 8px; }
+        .badge-success { background: #00ff8844; color: #00ff88; }
+        .badge-warning { background: #ffaa0044; color: #ffaa00; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 10px; text-align: left; border-bottom: 1px solid #333; }
+        th { color: #f7b733; }
+        .oro-badge { background: linear-gradient(135deg, #FFD700, #FFA500); color: #1a1a2e; padding: 8px 16px; border-radius: 8px; font-weight: bold; }
+        .status { padding: 4px 8px; border-radius: 4px; font-size: 0.8em; }
+        .status-ok { background: #00ff8844; color: #00ff88; }
+        .status-error { background: #ff444444; color: #ff4444; }
+        .last-update { font-size: 0.9em; color: #888; }
+        canvas { max-height: 200px; }
+        @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🥇 Gold Arbitrage Dashboard</h1>
+            <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-top: 10px; align-items: center;">
+                <span id="connectionStatus" class="status status-error">🔴 Desconectado</span>
+                <span class="oro-badge">💰 ORO TOTAL: <span id="oroTotal">--</span></span>
+                <span class="last-update">🕒 Última actualización: <span id="lastUpdate">--</span></span>
+                <button onclick="refreshData()" style="padding: 8px 16px; background: #2c3e50; color: white; border: none; border-radius: 6px; cursor: pointer;">🔄 Refrescar</button>
+            </div>
+        </div>
+
+        <!-- Umbral -->
+        <div class="card">
+            <strong>🎯 Umbral de Ejecución</strong>
+            <div style="margin: 10px 0;">
+                <div style="background: linear-gradient(90deg, #ff4444, #ffaa00, #00ff88); height: 8px; border-radius: 4px; position: relative;">
+                    <div id="thresholdMarker" style="position: absolute; width: 2px; height: 16px; background: white; top: -4px; transform: translateX(-50%);"></div>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-top: 5px; font-size: 0.85em;">
+                    <span style="color: #ff4444;">No ejecutable</span>
+                    <span style="color: #ffaa00;">⚠️ Borde</span>
+                    <span style="color: #00ff88;">✅ Ejecutable</span>
+                </div>
+            </div>
+            <div class="metric">
+                <span>Umbral mínimo:</span>
+                <span class="profit-positive" id="thresholdValue">0.6%</span>
+            </div>
+            <div class="metric">
+                <span>Mejor oportunidad:</span>
+                <span id="bestProfit">--</span>
+            </div>
+        </div>
+
+        <!-- Oportunidades -->
+        <div class="grid">
+            <div class="card">
+                <strong>📋 Todas las oportunidades</strong>
+                <div style="max-height: 300px; overflow-y: auto; margin-top: 10px;">
+                    <table>
+                        <thead><tr><th>Par</th><th>Profit</th><th>Precio</th><th>Ejecutable</th></tr></thead>
+                        <tbody id="allOpps"></tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="card">
+                <strong>🚀 Oportunidades Ejecutables</strong>
+                <div style="max-height: 300px; overflow-y: auto; margin-top: 10px;">
+                    <table>
+                        <thead><tr><th>Par</th><th>Profit</th><th>Precio</th></tr></thead>
+                        <tbody id="actionableOpps"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Balances y Stats -->
+        <div class="grid">
+            <div class="card">
+                <strong>📊 Métricas</strong>
+                <div id="stats"></div>
+            </div>
+            <div class="card">
+                <strong>💰 Balances</strong>
+                <div id="balances"></div>
+                <div class="metric" style="margin-top: 10px; border-top: 1px solid #f7b733; padding-top: 10px;">
+                    <span style="color: #FFD700; font-weight: bold;">💰 ORO TOTAL</span>
+                    <span id="oroTotalBal" style="color: #FFD700; font-weight: bold;">--</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gráfico -->
+        <div class="card">
+            <strong>📈 Evolución de Precios</strong>
+            <select id="pairSelect" onchange="updateChart()" style="margin: 10px 0; padding: 5px; background: #2c3e50; color: white; border: none; border-radius: 4px;">
+                <option value="XAUt0_PAXG_sell">XAUt0 → PAXG</option>
+                <option value="XAUt0_PAXG_buy">PAXG → XAUt0</option>
+                <option value="GOLD_PAXG_sell">GOLD → PAXG</option>
+                <option value="GOLD_PAXG_buy">PAXG → GOLD</option>
+                <option value="XAUt0_GOLD_sell">XAUt0 → GOLD</option>
+                <option value="XAUt0_GOLD_buy">GOLD → XAUt0</option>
+            </select>
+            <canvas id="priceChart"></canvas>
+        </div>
+    </div>
+
+    <script>
+        // ────────────────────────────────────────────────
+        // CONFIGURACIÓN: URL del JSON en GitHub
+        // ────────────────────────────────────────────────
+        
+        // OPCIÓN A: GitHub Raw (más simple, puede tener ~1-2 min de delay en CDN)
+        const GITHUB_RAW_URL = "https://raw.githubusercontent.com/cryptomindnaut-gif/CMIND/main/data/gold_bot_state.json";
+        
+        // OPCIÓN B: GitHub Pages (si subes el JSON también a /docs, mismo dominio = sin CORS)
+        // const GITHUB_PAGES_URL = "/data/gold_bot_state.json";  // Si el JSON está en /docs/data/
+        
+        // Selecciona una:
+        const DATA_URL = GITHUB_RAW_URL;  // ← Cambia a GITHUB_PAGES_URL si usas esa opción
+        
+        // ────────────────────────────────────────────────
+        // LÓGICA DEL DASHBOARD
+        // ────────────────────────────────────────────────
+        
+        let priceChart;
+        let priceHistory = {};
+        const MAX_HISTORY = 30;
+
+        // Inicializar gráfico
+        function initChart() {
+            const ctx = document.getElementById('priceChart').getContext('2d');
+            priceChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: [],
+                    datasets: [{
+                        label: 'Precio',
+                        data: [],
+                        borderColor: '#f7b733',
+                        backgroundColor: 'rgba(247, 183, 51, 0.1)',
+                        tension: 0.4,
+                        fill: true,
+                        pointRadius: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    plugins: { legend: { labels: { color: '#fff' } } },
+                    scales: {
+                        x: { ticks: { color: '#888' }, grid: { color: '#333' } },
+                        y: { ticks: { color: '#888' }, grid: { color: '#333' } }
+                    }
+                }
+            });
+        }
+
+        // Fetch con cache-busting y manejo de errores
+        async function fetchBotState() {
+            const url = `${DATA_URL}?t=${Date.now()}`; // Cache-busting
+            const controller = new AbortController();
+            const timeout = setTimeout(() => controller.abort(), 10000); // 10s timeout
+            
+            try {
+                const resp = await fetch(url, { 
+                    signal: controller.signal,
+                    headers: { 'Cache-Control': 'no-cache' }
+                });
+                clearTimeout(timeout);
+                
+                if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+                const data = await resp.json();
+                
+                // Actualizar estado de conexión
+                document.getElementById('connectionStatus').className = 'status status-ok';
+                document.getElementById('connectionStatus').textContent = '🟢 Conectado';
+                
+                return data;
+            } catch (error) {
+                clearTimeout(timeout);
+                console.error('Error fetching state:', error);
+                document.getElementById('connectionStatus').className = 'status status-error';
+                document.getElementById('connectionStatus').textContent = `🔴 Error: ${error.message}`;
+                throw error;
+            }
+        }
+
+        // Formatear profit con color
+        function formatProfit(pct) {
+            const cls = pct >= 0 ? 'profit-positive' : 'profit-negative';
+            const sign = pct >= 0 ? '+' : '';
+            return `<span class="${cls}">${sign}${pct?.toFixed(2)}%</span>`;
+        }
+
+        // Actualizar UI principal
+        function updateUI(data) {
+            const threshold = data.config?.threshold_pct || data.threshold || 0.6;
+            
+            // Header
+            document.getElementById('lastUpdate').textContent = new Date(data.timestamp || Date.now()).toLocaleTimeString();
+            document.getElementById('thresholdValue').textContent = `${threshold}%`;
+            document.getElementById('thresholdMarker').style.left = `${Math.min(100, Math.max(0, threshold * 20))}%`;
+            
+            // ORO TOTAL
+            const oroTotal = data.total_gold_balance || 0;
+            document.getElementById('oroTotal').textContent = oroTotal.toFixed(6);
+            document.getElementById('oroTotalBal').textContent = oroTotal.toFixed(6);
+            
+            // Mejor oportunidad
+            const best = data.best_actionable || data.best_opportunity || (data.actionable_opportunities?.[0]) || (data.all_opportunities?.[0]);
+            if (best) {
+                document.getElementById('bestProfit').innerHTML = `${best.profit_pct?.toFixed(2)}% <small>(${best.from_token}→${best.to_token})</small>`;
+            } else {
+                document.getElementById('bestProfit').textContent = '--';
+            }
+            
+            // Tabla: TODAS las oportunidades
+            const allList = document.getElementById('allOpps');
+            allList.innerHTML = '';
+            (data.all_opportunities || []).forEach(opp => {
+                const actionable = opp.profit_pct >= threshold;
+                const row = allList.insertRow();
+                row.innerHTML = `
+                    <td><strong>${opp.from_token}→${opp.to_token}</strong><br><small style="color:#666">${opp.direction}</small></td>
+                    <td>${formatProfit(opp.profit_pct)}</td>
+                    <td style="font-family:monospace">${opp.price?.toFixed(8) || '--'}</td>
+                    <td>${actionable ? '<span class="badge badge-success">✅</span>' : '<span class="badge badge-warning">❌</span>'}</td>
+                `;
+            });
+            
+            // Tabla: Solo ejecutables
+            const actList = document.getElementById('actionableOpps');
+            actList.innerHTML = '';
+            const actionable = (data.actionable_opportunities || []).filter(o => o.profit_pct >= threshold);
+            if (actionable.length === 0) {
+                actList.innerHTML = '<tr><td colspan="3" style="text-align:center;color:#ffaa00">⚠️ Sin oportunidades ≥ umbral</td></tr>';
+            } else {
+                actionable.forEach(opp => {
+                    const row = actList.insertRow();
+                    row.innerHTML = `
+                        <td><strong>${opp.from_token}→${opp.to_token}</strong></td>
+                        <td class="profit-positive">+${opp.profit_pct?.toFixed(2)}%</td>
+                        <td style="font-family:monospace">${opp.price?.toFixed(8) || '--'}</td>
+                    `;
+                });
+            }
+            
+            // Balances
+            const balDiv = document.getElementById('balances');
+            balDiv.innerHTML = '';
+            if (data.balances) {
+                for (const [token, balance] of Object.entries(data.balances)) {
+                    const color = token === 'SOL' ? '#9b59b6' : (data.tokens?.[token]?.color || '#fff');
+                    balDiv.innerHTML += `<div class="metric"><span style="color:${color}">${token}</span><span>${(balance||0).toFixed(6)}</span></div>`;
+                }
+            }
+            
+            // Stats básicos
+            const statsDiv = document.getElementById('stats');
+            const stats = data.stats || {};
+            statsDiv.innerHTML = `
+                <div class="metric"><span>🔄 Swaps totales</span><span>${stats.total_swaps || 0}</span></div>
+                <div class="metric"><span>💰 Profit acumulado</span><span class="profit-positive">$${(stats.total_profit_usd || 0).toFixed(4)}</span></div>
+                <div class="metric"><span>📈 Win Rate</span><span>${(stats.win_rate || 0).toFixed(1)}%</span></div>
+            `;
+            
+            // Actualizar histórico para gráfico
+            updatePriceHistory(data);
+        }
+
+        // Actualizar histórico de precios para gráfico
+        function updatePriceHistory(data) {
+            if (!data.prices) return;
+            const now = new Date();
+            
+            for (const [pairId, pdata] of Object.entries(data.prices)) {
+                if (!priceHistory[pairId]) priceHistory[pairId] = [];
+                priceHistory[pairId].push({
+                    timestamp: now,
+                    price: pdata.price,
+                    profit: pdata.profit
+                });
+                // Limitar historial
+                if (priceHistory[pairId].length > MAX_HISTORY) {
+                    priceHistory[pairId] = priceHistory[pairId].slice(-MAX_HISTORY);
+                }
+            }
+            updateChart();
+        }
+
+        // Actualizar gráfico
+        function updateChart() {
+            const pair = document.getElementById('pairSelect').value;
+            const history = priceHistory[pair] || [];
+            
+            priceChart.data.labels = history.map(h => h.timestamp.toLocaleTimeString());
+            priceChart.data.datasets[0].data = history.map(h => h.price);
+            priceChart.data.datasets[0].label = pair.replace('_', ' → ').replace('_sell', '').replace('_buy', '');
+            priceChart.update();
+        }
+
+        // Refresh manual
+        async function refreshData() {
+            try {
+                const btn = event.target;
+                const originalText = btn.textContent;
+                btn.textContent = '⏳ Cargando...';
+                btn.disabled = true;
+                
+                const data = await fetchBotState();
+                updateUI(data);
+                
+                btn.textContent = '✅ Actualizado';
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                    btn.disabled = false;
+                }, 1500);
+            } catch (e) {
+                event.target.textContent = '❌ Error';
+                setTimeout(() => {
+                    event.target.textContent = '🔄 Refrescar';
+                    event.target.disabled = false;
+                }, 2000);
+            }
+        }
+
+        // Auto-refresh loop
+        async function startAutoRefresh(intervalMs = 65000) {
+            while (true) {
+                try {
+                    const data = await fetchBotState();
+                    updateUI(data);
+                } catch (e) {
+                    console.warn('Auto-refresh failed, retrying in 30s:', e.message);
+                }
+                await new Promise(resolve => setTimeout(resolve, intervalMs));
+            }
+        }
+
+        // Inicialización
+        document.addEventListener('DOMContentLoaded', () => {
+            initChart();
+            refreshData(); // Primera carga inmediata
+            startAutoRefresh(65000); // Luego cada 65s (ligeramente más que el sync de 60s)
+        });
+    </script>
+</body>
+</html>
