@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-01T02:42:30.782113",
+  "timestamp": "2026-06-01T02:43:02.230467",
   "trading_mode": false,
   "balances": {
     "XAUt0": 0.050067,
@@ -18,35 +18,35 @@
       "inputMint": "AymATz4TCL9sWNEEV9Kvyz45CHVhDZ6kUgjTJPzLpU9P",
       "inAmount": "25000",
       "outputMint": "GoLDppdjB1vDTPSGxyMJFqdnj134yH6Prg9eqsGDiw6A",
-      "outAmount": "25025",
-      "otherAmountThreshold": "24900",
+      "outAmount": "25027",
+      "otherAmountThreshold": "24902",
       "swapMode": "ExactIn",
       "slippageBps": 50,
       "platformFee": null,
-      "priceImpactPct": "0.0008060442038791159224176816",
+      "priceImpactPct": "0.0007261885430762291384754173",
       "routePlan": [
         {
           "swapInfo": {
-            "ammKey": "B2q3X5QA47NTaVrQKNhGo2ii1Zs8x5h6CZK6qydRdJrA",
-            "label": "Whirlpool",
+            "ammKey": "EUAa7W7omZMN6mzLFidmULMYwJBFxfUzE3kD8ywX9Qq9",
+            "label": "Byreal",
             "inputMint": "AymATz4TCL9sWNEEV9Kvyz45CHVhDZ6kUgjTJPzLpU9P",
-            "outputMint": "So11111111111111111111111111111111111111112",
+            "outputMint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
             "inAmount": "25000",
-            "outAmount": "1362879343",
-            "updateContextSlot": "423485277"
+            "outAmount": "113003922",
+            "updateContextSlot": "423485430"
           },
           "percent": 100,
           "bps": null
         },
         {
           "swapInfo": {
-            "ammKey": "Has2dQDkTXyzEm5HKCDyxHuCwPcPwf1PN6zQg7JKt9Xn",
-            "label": "AlphaQ",
-            "inputMint": "So11111111111111111111111111111111111111112",
+            "ammKey": "CNC5TaeNQEoSPfQKZ7GgfM4R8WYAJRKRSHFCHkf2H7ko",
+            "label": "Aquifer",
+            "inputMint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
             "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
-            "inAmount": "1362879343",
-            "outAmount": "112885154",
-            "updateContextSlot": "423485352"
+            "inAmount": "113003922",
+            "outAmount": "112884145",
+            "updateContextSlot": "423485432"
           },
           "percent": 100,
           "bps": null
@@ -57,23 +57,23 @@
             "label": "ZeroFi",
             "inputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
             "outputMint": "GoLDppdjB1vDTPSGxyMJFqdnj134yH6Prg9eqsGDiw6A",
-            "inAmount": "112885154",
-            "outAmount": "25025",
-            "updateContextSlot": "423485350"
+            "inAmount": "112884145",
+            "outAmount": "25027",
+            "updateContextSlot": "423485426"
           },
           "percent": 100,
           "bps": null
         }
       ],
-      "contextSlot": 423485353,
-      "timeTaken": 0.001019086,
+      "contextSlot": 423485432,
+      "timeTaken": 0.000982509,
       "swapUsdValue": "112.96882060551287844554902847",
       "mostReliableAmmsQuoteReport": {
         "info": {
           "9KWAAyaYF7nmMWzirnBmVhE1q4YXPHcXjzfi6YreNtDY": "112717772",
-          "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE": "112807561",
-          "3Vj8miZuTSdonf4W1xLdYFatrXLm38CShrCi7NbZS5Ah": "24955",
-          "BZtgQEyS6eXUXicYPHecYQ7PybqodXQMvkjUbP4R8mUU": "112870757"
+          "BZtgQEyS6eXUXicYPHecYQ7PybqodXQMvkjUbP4R8mUU": "112589984",
+          "8sjV1AqBFvFuADBCQHhotaRq5DFFYSjjg1jMyVWMqXvZ": "112598122",
+          "3Vj8miZuTSdonf4W1xLdYFatrXLm38CShrCi7NbZS5Ah": "24953"
         }
       },
       "longtailMarketQuoteReport": null,
@@ -83,10 +83,10 @@
       "loadedLongtailToken": false,
       "instructionVersion": null
     },
-    "price": 1.001,
-    "profit_pct": 0.09999999999998899,
+    "price": 1.00108,
+    "profit_pct": 0.10799999999999699,
     "in_ui": 0.025,
-    "out_ui": 0.025025,
+    "out_ui": 0.025027,
     "in_raw": 25000,
     "is_actionable": false,
     "from_mint": "AymATz4TCL9sWNEEV9Kvyz45CHVhDZ6kUgjTJPzLpU9P",
@@ -106,6 +106,6 @@
     "total_swaps": 0,
     "last_swap": null
   },
-  "_synced_at": "2026-06-01T02:42:31.267608",
+  "_synced_at": "2026-06-01T02:43:31.254575",
   "_sync_source": "github_sync.py"
 }
