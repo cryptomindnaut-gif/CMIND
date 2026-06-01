@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-01T03:00:15.817782",
+  "timestamp": "2026-06-01T03:01:19.194547",
   "trading_mode": false,
   "balances": {
     "XAUt0": 0.050067,
@@ -9,57 +9,43 @@
   },
   "total_gold_balance": 0.05522751,
   "best_opportunity": {
-    "pair_id": "XAUt0_GOLD_sell",
-    "from": "XAUt0",
-    "to": "GOLD",
-    "direction": "sell",
-    "label": "XAUt0 ↔ GOLD",
+    "pair_id": "XAUt0_PAXG_buy",
+    "from": "PAXG",
+    "to": "XAUt0",
+    "direction": "buy",
+    "label": "XAUt0 ↔ PAXG",
     "quote": {
-      "inputMint": "AymATz4TCL9sWNEEV9Kvyz45CHVhDZ6kUgjTJPzLpU9P",
-      "inAmount": "25000",
-      "outputMint": "GoLDppdjB1vDTPSGxyMJFqdnj134yH6Prg9eqsGDiw6A",
-      "outAmount": "25022",
-      "otherAmountThreshold": "24897",
+      "inputMint": "C6oFsE8nXRDThzrMEQ5SxaNFGKoyyfWDDVPw37JKvPTe",
+      "inAmount": "2500000",
+      "outputMint": "AymATz4TCL9sWNEEV9Kvyz45CHVhDZ6kUgjTJPzLpU9P",
+      "outAmount": "25018",
+      "otherAmountThreshold": "24893",
       "swapMode": "ExactIn",
       "slippageBps": 50,
       "platformFee": null,
-      "priceImpactPct": "0.0004749819494584837545126354",
+      "priceImpactPct": "0.0083651273712737127371273712",
       "routePlan": [
         {
           "swapInfo": {
-            "ammKey": "B3QsKvpsBYVAuJBzyKRBWBJw8CAM45zStdJhtE1miBri",
+            "ammKey": "BRAfc8XtLaBWgSKWPm8vpqatyvHsEWEuzEm7CZsYcQxW",
             "label": "Whirlpool",
-            "inputMint": "AymATz4TCL9sWNEEV9Kvyz45CHVhDZ6kUgjTJPzLpU9P",
-            "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
-            "inAmount": "25000",
-            "outAmount": "112854525",
-            "updateContextSlot": "423488019"
-          },
-          "percent": 100,
-          "bps": null
-        },
-        {
-          "swapInfo": {
-            "ammKey": "CmQFZMT6MtFMSPaw82uGYGp7jJpX6YJZMAjKW3mRpMmk",
-            "label": "ZeroFi",
-            "inputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
-            "outputMint": "GoLDppdjB1vDTPSGxyMJFqdnj134yH6Prg9eqsGDiw6A",
-            "inAmount": "112854525",
-            "outAmount": "25022",
-            "updateContextSlot": "423488019"
+            "inputMint": "C6oFsE8nXRDThzrMEQ5SxaNFGKoyyfWDDVPw37JKvPTe",
+            "outputMint": "AymATz4TCL9sWNEEV9Kvyz45CHVhDZ6kUgjTJPzLpU9P",
+            "inAmount": "2500000",
+            "outAmount": "25018",
+            "updateContextSlot": "423479436"
           },
           "percent": 100,
           "bps": null
         }
       ],
-      "contextSlot": 423488026,
-      "timeTaken": 0.000881284,
-      "swapUsdValue": "112.96882060551287844554902847",
+      "contextSlot": 423488169,
+      "timeTaken": 0.000363557,
+      "swapUsdValue": "113.95232234832945895437349013",
       "mostReliableAmmsQuoteReport": {
         "info": {
-          "9KWAAyaYF7nmMWzirnBmVhE1q4YXPHcXjzfi6YreNtDY": "112717772",
-          "BZtgQEyS6eXUXicYPHecYQ7PybqodXQMvkjUbP4R8mUU": "112589981",
-          "3Vj8miZuTSdonf4W1xLdYFatrXLm38CShrCi7NbZS5Ah": "24949"
+          "9KWAAyaYF7nmMWzirnBmVhE1q4YXPHcXjzfi6YreNtDY": "24753",
+          "Hhe5ALUosQ6sryrq1ASDX4ee5uf27ZKGdAWPspQivCDw": "Not found"
         }
       },
       "longtailMarketQuoteReport": null,
@@ -69,15 +55,15 @@
       "loadedLongtailToken": false,
       "instructionVersion": null
     },
-    "price": 1.00088,
-    "profit_pct": 0.08799999999999919,
+    "price": 1.0007199999999998,
+    "profit_pct": 0.07199999999998319,
     "in_ui": 0.025,
-    "out_ui": 0.025022,
-    "in_raw": 25000,
+    "out_ui": 0.025018,
+    "in_raw": 2500000,
     "is_actionable": false,
-    "from_mint": "AymATz4TCL9sWNEEV9Kvyz45CHVhDZ6kUgjTJPzLpU9P",
-    "to_mint": "GoLDppdjB1vDTPSGxyMJFqdnj134yH6Prg9eqsGDiw6A",
-    "from_dec": 6,
+    "from_mint": "C6oFsE8nXRDThzrMEQ5SxaNFGKoyyfWDDVPw37JKvPTe",
+    "to_mint": "AymATz4TCL9sWNEEV9Kvyz45CHVhDZ6kUgjTJPzLpU9P",
+    "from_dec": 8,
     "to_dec": 6
   },
   "best_actionable": null,
@@ -92,6 +78,6 @@
     "total_swaps": 0,
     "last_swap": null
   },
-  "_synced_at": "2026-06-01T03:00:31.265836",
+  "_synced_at": "2026-06-01T03:01:31.266560",
   "_sync_source": "github_sync.py"
 }
